@@ -1,0 +1,72 @@
+/*No real need for a media query*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(7, 16, 19);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(235, 81, 96);
+}
+
+/*center all items in a column*/
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*button alignment*/
+#options {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-column-gap: 10px;
+}
+
+/*center text within the button itself*/
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: rgb(235, 81, 96);
+  padding: 8px;
+  width: 120px;
+}
+
+/*align input box with text*/
+.btn input {
+  text-align: center;
+  margin-left: 8px;
+  border: none;
+  height: 20px;
+  width: 32px;
+}
+
+.btn:hover {
+  background-color: rgb(226, 209, 210);
+  transition-duration: 1s;
+}
+
+/*container for sketching*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  height: 360px;
+  width: 360px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(90, 86, 86);
+  border-color: rgb(183, 153, 156);
+}
